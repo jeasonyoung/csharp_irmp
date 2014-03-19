@@ -1,0 +1,319 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94651D09-67C9-4047-A2C8-6D7B94447B95}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iPower.IRMP.Flow.Web</RootNamespace>
+    <AssemblyName>iPower.IRMP.Flow.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\iPower.IRMP.Flow.Web.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="FlowChartDesign.xslt" />
+    <Content Include="FlowService.asmx" />
+    <Content Include="frmFlowChartDesign.aspx" />
+    <Content Include="frmFlowParameterEdit.aspx" />
+    <Content Include="frmFlowParameterList.aspx" />
+    <Content Include="frmFlowParameterMapEdit.aspx" />
+    <Content Include="frmFlowParameterMapList.aspx" />
+    <Content Include="frmFlowProcessEdit.aspx" />
+    <Content Include="frmFlowProcessExport.aspx" />
+    <Content Include="frmFlowProcessImport.aspx" />
+    <Content Include="frmFlowProcessInstanceEdit.aspx" />
+    <Content Include="frmFlowProcessInstanceList.aspx" />
+    <Content Include="frmFlowProcessList.aspx" />
+    <Content Include="frmFlowStepAuthorizeEdit.aspx" />
+    <Content Include="frmFlowStepAuthorizeList.aspx" />
+    <Content Include="frmFlowStepEdit.aspx" />
+    <Content Include="frmFlowStepList.aspx" />
+    <Content Include="frmFlowTransitionEdit.aspx" />
+    <Content Include="frmFlowTransitionList.aspx" />
+    <Content Include="frmUserPicker.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\iPower.IRMP\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="frmFlowStepInstanceEdit.aspx.cs">
+      <DependentUpon>frmFlowStepInstanceEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowStepInstanceEdit.aspx.designer.cs">
+      <DependentUpon>frmFlowStepInstanceEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo_v.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlowChartHandler.ashx.cs">
+      <DependentUpon>FlowChartHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="FlowService.asmx.cs">
+      <DependentUpon>FlowService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmFlowChartDesign.aspx.cs">
+      <DependentUpon>frmFlowChartDesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowChartDesign.aspx.designer.cs">
+      <DependentUpon>frmFlowChartDesign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowParameterEdit.aspx.cs">
+      <DependentUpon>frmFlowParameterEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowParameterEdit.aspx.designer.cs">
+      <DependentUpon>frmFlowParameterEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowParameterList.aspx.cs">
+      <DependentUpon>frmFlowParameterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowParameterList.aspx.designer.cs">
+      <DependentUpon>frmFlowParameterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowParameterMapEdit.aspx.cs">
+      <DependentUpon>frmFlowParameterMapEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowParameterMapEdit.aspx.designer.cs">
+      <DependentUpon>frmFlowParameterMapEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowParameterMapList.aspx.cs">
+      <DependentUpon>frmFlowParameterMapList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowParameterMapList.aspx.designer.cs">
+      <DependentUpon>frmFlowParameterMapList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowProcessEdit.aspx.cs">
+      <DependentUpon>frmFlowProcessEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowProcessEdit.aspx.designer.cs">
+      <DependentUpon>frmFlowProcessEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowProcessExport.aspx.cs">
+      <DependentUpon>frmFlowProcessExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowProcessExport.aspx.designer.cs">
+      <DependentUpon>frmFlowProcessExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowProcessImport.aspx.cs">
+      <DependentUpon>frmFlowProcessImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowProcessImport.aspx.designer.cs">
+      <DependentUpon>frmFlowProcessImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowProcessInstanceEdit.aspx.cs">
+      <DependentUpon>frmFlowProcessInstanceEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowProcessInstanceEdit.aspx.designer.cs">
+      <DependentUpon>frmFlowProcessInstanceEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowProcessInstanceList.aspx.cs">
+      <DependentUpon>frmFlowProcessInstanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowProcessInstanceList.aspx.designer.cs">
+      <DependentUpon>frmFlowProcessInstanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowProcessList.aspx.cs">
+      <DependentUpon>frmFlowProcessList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowProcessList.aspx.designer.cs">
+      <DependentUpon>frmFlowProcessList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowStepAuthorizeEdit.aspx.cs">
+      <DependentUpon>frmFlowStepAuthorizeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowStepAuthorizeEdit.aspx.designer.cs">
+      <DependentUpon>frmFlowStepAuthorizeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowStepAuthorizeList.aspx.cs">
+      <DependentUpon>frmFlowStepAuthorizeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowStepAuthorizeList.aspx.designer.cs">
+      <DependentUpon>frmFlowStepAuthorizeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowStepEdit.aspx.cs">
+      <DependentUpon>frmFlowStepEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowStepEdit.aspx.designer.cs">
+      <DependentUpon>frmFlowStepEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowStepList.aspx.cs">
+      <DependentUpon>frmFlowStepList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowStepList.aspx.designer.cs">
+      <DependentUpon>frmFlowStepList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowTransitionEdit.aspx.cs">
+      <DependentUpon>frmFlowTransitionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowTransitionEdit.aspx.designer.cs">
+      <DependentUpon>frmFlowTransitionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowTransitionList.aspx.cs">
+      <DependentUpon>frmFlowTransitionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFlowTransitionList.aspx.designer.cs">
+      <DependentUpon>frmFlowTransitionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserPicker.aspx.cs">
+      <DependentUpon>frmUserPicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUserPicker.aspx.designer.cs">
+      <DependentUpon>frmUserPicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleFrameSetMasterPage.Master.cs">
+      <DependentUpon>ModuleFrameSetMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleFrameSetMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleFrameSetMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Share\ModuleNormalMasterPage.Master.cs">
+      <DependentUpon>ModuleNormalMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleNormalMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleNormalMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TaskService.asmx.cs">
+      <DependentUpon>TaskService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Share\ModuleFrameSetMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\IRMP_FlowModuleConfig.xml" />
+    <Content Include="Client\Yaesoft.IRMP.Flow.Design.xap" />
+    <Content Include="Share\ModuleNormalMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlowChartHandler.ashx" />
+    <Content Include="frmFlowStepInstanceEdit.aspx" />
+    <Content Include="TaskService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\iPower\iPower.Data\iPower.Data.csproj">
+      <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
+      <Name>iPower.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
+      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
+      <Name>iPower.Platform.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower.Platform.UI\iPower.Platform.UI.csproj">
+      <Project>{F3918067-F289-4990-BFF6-A9D7064601BA}</Project>
+      <Name>iPower.Platform.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower.Platform\iPower.Platform.csproj">
+      <Project>{349E7E3F-0050-4728-A5D5-8A7ADD0F9FAF}</Project>
+      <Name>iPower.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower.Web\iPower.Web.csproj">
+      <Project>{6E1C506F-A613-459C-BAA2-F8A412680C1E}</Project>
+      <Name>iPower.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower\iPower.csproj">
+      <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
+      <Name>iPower</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower.IRMP.Flow.Engine\iPower.IRMP.Flow.Engine.csproj">
+      <Project>{935AF180-1C1B-428B-B90B-D5EBA6A45845}</Project>
+      <Name>iPower.IRMP.Flow.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower.IRMP.Flow\iPower.IRMP.Flow.csproj">
+      <Project>{AC82B0D6-DB71-41A0-ABCE-EF95B33BD344}</Project>
+      <Name>iPower.IRMP.Flow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11402</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

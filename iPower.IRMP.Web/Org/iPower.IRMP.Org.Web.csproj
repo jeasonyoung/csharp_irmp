@@ -1,0 +1,248 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2A372FB-371F-4B33-9E18-CF2E37AFD261}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iPower.IRMP.Org.Web</RootNamespace>
+    <AssemblyName>iPower.IRMP.Org.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\iPower.IRMP\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo_v.cs" />
+    <Compile Include="AuthenticationService.asmx.cs">
+      <DependentUpon>AuthenticationService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgDepartmentEdit.aspx.cs">
+      <DependentUpon>frmOrgDepartmentEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgDepartmentEdit.aspx.designer.cs">
+      <DependentUpon>frmOrgDepartmentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgDepartmentList.aspx.cs">
+      <DependentUpon>frmOrgDepartmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgDepartmentList.aspx.designer.cs">
+      <DependentUpon>frmOrgDepartmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgEmployeeEdit.aspx.cs">
+      <DependentUpon>frmOrgEmployeeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgEmployeeEdit.aspx.designer.cs">
+      <DependentUpon>frmOrgEmployeeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgEmployeeList.aspx.cs">
+      <DependentUpon>frmOrgEmployeeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgEmployeeList.aspx.designer.cs">
+      <DependentUpon>frmOrgEmployeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgEmployeePicker.aspx.cs">
+      <DependentUpon>frmOrgEmployeePicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgEmployeePicker.aspx.designer.cs">
+      <DependentUpon>frmOrgEmployeePicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgLeaderSubChargeEdit.aspx.cs">
+      <DependentUpon>frmOrgLeaderSubChargeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgLeaderSubChargeEdit.aspx.designer.cs">
+      <DependentUpon>frmOrgLeaderSubChargeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgLeaderSubChargeList.aspx.cs">
+      <DependentUpon>frmOrgLeaderSubChargeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgLeaderSubChargeList.aspx.designer.cs">
+      <DependentUpon>frmOrgLeaderSubChargeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgPostEdit.aspx.cs">
+      <DependentUpon>frmOrgPostEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgPostEdit.aspx.designer.cs">
+      <DependentUpon>frmOrgPostEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgPostList.aspx.cs">
+      <DependentUpon>frmOrgPostList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgPostList.aspx.designer.cs">
+      <DependentUpon>frmOrgPostList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgRankEdit.aspx.cs">
+      <DependentUpon>frmOrgRankEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgRankEdit.aspx.designer.cs">
+      <DependentUpon>frmOrgRankEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgRankList.aspx.cs">
+      <DependentUpon>frmOrgRankList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgRankList.aspx.designer.cs">
+      <DependentUpon>frmOrgRankList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrgFactoryService.asmx.cs">
+      <DependentUpon>OrgFactoryService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleFrameSetMasterPage.Master.cs">
+      <DependentUpon>ModuleFrameSetMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleFrameSetMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleFrameSetMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Share\ModuleNormalMasterPage.Master.cs">
+      <DependentUpon>ModuleNormalMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleNormalMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleNormalMasterPage.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\iPower\iPower.Data\iPower.Data.csproj">
+      <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
+      <Name>iPower.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
+      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
+      <Name>iPower.Platform.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower.Platform.UI\iPower.Platform.UI.csproj">
+      <Project>{F3918067-F289-4990-BFF6-A9D7064601BA}</Project>
+      <Name>iPower.Platform.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower.Platform\iPower.Platform.csproj">
+      <Project>{349E7E3F-0050-4728-A5D5-8A7ADD0F9FAF}</Project>
+      <Name>iPower.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower.Web\iPower.Web.csproj">
+      <Project>{6E1C506F-A613-459C-BAA2-F8A412680C1E}</Project>
+      <Name>iPower.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\iPower\iPower\iPower.csproj">
+      <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
+      <Name>iPower</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower.IRMP.Org.Engine\iPower.IRMP.Org.Engine.csproj">
+      <Project>{D1B035B5-FCAB-4815-B1CA-5C8ACD07947E}</Project>
+      <Name>iPower.IRMP.Org.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower.IRMP\iPower.IRMP.csproj">
+      <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
+      <Name>iPower.IRMP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Share\ModuleFrameSetMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\IRMP_OrgModuleConfig.xml" />
+    <Content Include="AuthenticationService.asmx" />
+    <Content Include="Default.aspx" />
+    <Content Include="frmOrgDepartmentEdit.aspx" />
+    <Content Include="frmOrgDepartmentList.aspx" />
+    <Content Include="frmOrgEmployeeEdit.aspx" />
+    <Content Include="frmOrgEmployeeList.aspx" />
+    <Content Include="frmOrgEmployeePicker.aspx" />
+    <Content Include="frmOrgLeaderSubChargeEdit.aspx" />
+    <Content Include="frmOrgLeaderSubChargeList.aspx" />
+    <Content Include="frmOrgPostEdit.aspx" />
+    <Content Include="frmOrgPostList.aspx" />
+    <Content Include="frmOrgRankEdit.aspx" />
+    <Content Include="frmOrgRankList.aspx" />
+    <Content Include="OrgFactoryService.asmx" />
+    <Content Include="Share\ModuleNormalMasterPage.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11395</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

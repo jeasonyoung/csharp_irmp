@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Jeason version="1.0">
+  <!--IRMP-->
+  <System SystemID="A0000000000000000000000000000000" SystemSign="yaesoft.IRMP" SystemName="信息和资源管理平台" SystemDescription="">
+    <Module ModuleID="AS000000000000000000000000000000" ModuleName="系统管理" ModuleUri="/Sys/" OrderNo="1"/>
+    <Module ModuleID="AG000000000000000000000000000000" ModuleName="组织架构" ModuleUri="/Org/" OrderNo="2"/>
+    <Module ModuleID="AF000000000000000000000000000000" ModuleName="流程管理" ModuleUri="/Flow/" OrderNo="3"/>
+    <Module ModuleID="AA000000000000000000000000000000" ModuleName="公文流转" ModuleUri="/Official/" OrderNo="4"/>
+    <!--<Module ModuleID="AB000000000000000000000000000000" ModuleName="文档管理" ModuleUri="/DM/" OrderNo="5"/>-->
+    <Module ModuleID="ABC00000000000000000000000000000" ModuleName="文档管理" ModuleUri="/HSDM/" OrderNo="6"/>
+  </System>  
+</Jeason>

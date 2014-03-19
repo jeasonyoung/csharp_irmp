@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<Resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Resource resKey="Sys_ResKey.HeaderText" resValue="0x资源测试键名test" desc="资源测试键名资源测试键名资源测试键名t" />
+</Resources>

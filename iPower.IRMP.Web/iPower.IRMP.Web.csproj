@@ -1,0 +1,330 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D365B556-7715-421A-B30B-CC9F6FD7F140}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iPower.IRMP.Web</RootNamespace>
+    <AssemblyName>iPower.IRMP.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Platform.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Platform.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Resources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\iPower.IRMP\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Controls\MainMenu.ascx.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MainMenu.ascx.designer.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo_v.cs" />
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopBanner.ascx.cs">
+      <DependentUpon>TopBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TopBanner.ascx.designer.cs">
+      <DependentUpon>TopBanner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleBaseMaster.Master.cs">
+      <DependentUpon>ModuleBaseMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleBaseMaster.Master.designer.cs">
+      <DependentUpon>ModuleBaseMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Share\ModuleFrameMasterPage.Master.cs">
+      <DependentUpon>ModuleFrameMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleFrameMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleFrameMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Share\ModuleFrameSetMasterPage.Master.cs">
+      <DependentUpon>ModuleFrameSetMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleFrameSetMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleFrameSetMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Share\ModuleNormalMasterPage.Master.cs">
+      <DependentUpon>ModuleNormalMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleNormalMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleNormalMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SSOTicketDbProviderService.asmx.cs">
+      <DependentUpon>SSOTicketDbProviderService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebPart\TaskView.ascx.cs">
+      <DependentUpon>TaskView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPart\TaskView.ascx.designer.cs">
+      <DependentUpon>TaskView.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\IRMP_ModuleConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Share\ModuleBaseMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Share\ModuleNormalMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Summer\Button\btnBg.gif" />
+    <Content Include="App_Themes\Summer\Button\LoginOver.png" />
+    <Content Include="App_Themes\Summer\Button\LoginOut.png" />
+    <Content Include="App_Themes\Summer\Default.css" />
+    <Content Include="App_Themes\Summer\Images\Footer.jpg" />
+    <Content Include="App_Themes\Summer\Images\MainMenu.jpg" />
+    <Content Include="App_Themes\Summer\Images\MainMenuOut.png" />
+    <Content Include="App_Themes\Summer\Images\MainMenuOver.png" />
+    <Content Include="App_Themes\Summer\Images\TopBanner.jpg" />
+    <Content Include="App_Themes\Summer\Images\TopBannerMenu.png" />
+    <Content Include="App_Themes\Summer\Images\TopBannerMenuLeft.png" />
+    <Content Include="App_Themes\Summer\Images\UserInfo.png" />
+    <Content Include="App_Themes\Summer\Layout.css" />
+    <Content Include="App_Themes\Summer\LoginLayout.css" />
+    <Content Include="App_Themes\Summer\Login\main.jpg" />
+    <Content Include="App_Themes\Summer\Login\left.jpg" />
+    <Content Include="App_Themes\Summer\Login\right.jpg" />
+    <Content Include="App_Themes\Summer\WebControls.css" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\LeftMenu.ascx" />
+    <Content Include="Controls\MainMenu.ascx" />
+    <Content Include="Controls\TopBanner.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Include\HSDM\Document.png" />
+    <Content Include="Include\HSDM\Folder.png" />
+    <Content Include="Include\loading.gif" />
+    <Content Include="Include\menu_close.gif" />
+    <Content Include="Include\menu_open.gif" />
+    <Content Include="Include\yaesoftb.ico" />
+    <Content Include="Share\ModuleFrameSetMasterPage.Master" />
+    <Content Include="SSOTicketDbProviderService.asmx" />
+    <Content Include="WebPart\TaskView.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iPower.IRMP.Engine\iPower.IRMP.Engine.csproj">
+      <Project>{7EE919AF-588F-403B-81FB-E2B462341C66}</Project>
+      <Name>iPower.IRMP.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP.Flow.Poxy\iPower.IRMP.Flow.Poxy.csproj">
+      <Project>{39FE19EB-74A1-4D5F-B41B-F05F86848699}</Project>
+      <Name>iPower.IRMP.Flow.Poxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP.Org.Poxy\iPower.IRMP.Org.Poxy.csproj">
+      <Project>{6B14F10A-78F5-48E6-9A92-5B2A88D4ED10}</Project>
+      <Name>iPower.IRMP.Org.Poxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP.Security.Poxy\iPower.IRMP.Security.Poxy.csproj">
+      <Project>{4F442E69-8F66-4D5A-A1E2-DDD60714CEF4}</Project>
+      <Name>iPower.IRMP.Security.Poxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP.SSOClient\iPower.IRMP.SSOClient.csproj">
+      <Project>{B544B8DF-44E0-4830-B512-DC5277BD81F2}</Project>
+      <Name>iPower.IRMP.SSOClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP\iPower.IRMP.csproj">
+      <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
+      <Name>iPower.IRMP</Name>
+    </ProjectReference>
+    <ProjectReference Include="Flow\iPower.IRMP.Flow.Web.csproj">
+      <Project>{94651D09-67C9-4047-A2C8-6D7B94447B95}</Project>
+      <Name>iPower.IRMP.Flow.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="Official\Yaesoft.IRMP.Official.Web.csproj">
+      <Project>{8C683732-2081-4C7E-8A6B-077D5E1C4122}</Project>
+      <Name>Yaesoft.IRMP.Official.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="Org\iPower.IRMP.Org.Web.csproj">
+      <Project>{F2A372FB-371F-4B33-9E18-CF2E37AFD261}</Project>
+      <Name>iPower.IRMP.Org.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="Security\iPower.IRMP.Security.Web.csproj">
+      <Project>{3DD3CEED-C71E-464C-A1BA-6145F7CCEBAD}</Project>
+      <Name>iPower.IRMP.Security.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sys\iPower.IRMP.SysMgr.Web.csproj">
+      <Project>{C8AABA00-8F02-4CC6-BC6D-401F388AC890}</Project>
+      <Name>iPower.IRMP.SysMgr.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Summer\Button\AddDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\AddOut.gif" />
+    <Content Include="App_Themes\Summer\Button\AddOver.gif" />
+    <Content Include="App_Themes\Summer\Button\ApprovalDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\ApprovalOut.gif" />
+    <Content Include="App_Themes\Summer\Button\ApprovalOver.gif" />
+    <Content Include="App_Themes\Summer\Button\BatchDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\BatchOut.gif" />
+    <Content Include="App_Themes\Summer\Button\BatchOver.gif" />
+    <Content Include="App_Themes\Summer\Button\CancelDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\CancelOut.gif" />
+    <Content Include="App_Themes\Summer\Button\CancelOver.gif" />
+    <Content Include="App_Themes\Summer\Button\DelDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\DelOut.gif" />
+    <Content Include="App_Themes\Summer\Button\DelOver.gif" />
+    <Content Include="App_Themes\Summer\Button\Disabled.gif" />
+    <Content Include="App_Themes\Summer\Button\DisableDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\DisableOut.gif" />
+    <Content Include="App_Themes\Summer\Button\DisableOver.gif" />
+    <Content Include="App_Themes\Summer\Button\EnableDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\EnableOut.gif" />
+    <Content Include="App_Themes\Summer\Button\EnableOver.gif" />
+    <Content Include="App_Themes\Summer\Button\ExportDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\ExportOut.gif" />
+    <Content Include="App_Themes\Summer\Button\ExportOver.gif" />
+    <Content Include="App_Themes\Summer\Button\HaveReadDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\HaveReadOut.gif" />
+    <Content Include="App_Themes\Summer\Button\HaveReadOver.gif" />
+    <Content Include="App_Themes\Summer\Button\ImportDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\ImportOut.gif" />
+    <Content Include="App_Themes\Summer\Button\ImportOver.gif" />
+    <Content Include="App_Themes\Summer\Button\Out.gif" />
+    <Content Include="App_Themes\Summer\Button\Over.gif" />
+    <Content Include="App_Themes\Summer\Button\SaveDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\SaveOut.gif" />
+    <Content Include="App_Themes\Summer\Button\SaveOver.gif" />
+    <Content Include="App_Themes\Summer\Button\SearchDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\SearchOut.gif" />
+    <Content Include="App_Themes\Summer\Button\SearchOver.gif" />
+    <Content Include="App_Themes\Summer\Images\Banner.png" />
+    <Content Include="App_Themes\Summer\Images\BannerBg.jpg" />
+    <Content Include="App_Themes\Summer\Images\bg.png" />
+    <Content Include="App_Themes\Summer\Images\bgcolor.gif" />
+    <Content Include="App_Themes\Summer\Images\LeftMenuBg.png" />
+    <Content Include="App_Themes\Summer\Images\MainAreaMiddleBg.png" />
+    <Content Include="App_Themes\Summer\Images\WorkPlaceMainTopBg.png" />
+    <Content Include="App_Themes\Summer\Images\WorkPlaceTopHeader.png" />
+    <Content Include="Include\menu_close_s.png" />
+    <Content Include="Include\menu_open_s.png" />
+    <Content Include="Share\ModuleFrameMasterPage.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8951</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="iPower.IRMP.Flow.Design.ElementShape.ShapeCondition"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid x:Name="LayoutRoot" VerticalAlignment="Center" HorizontalAlignment="Center" Width="144.20" Height="50">
+        <Polyline Name="plCondition" Canvas.ZIndex="80" VerticalAlignment="Center" HorizontalAlignment="Center" Fill="White" Stroke="Green"
+                  StrokeThickness="2" Opacity="1.0" Points="0,25 69.10,0 138.20,25 69.10,50 0,25"/>
+        <TextBlock x:Name="txtbConditionTitle" Canvas.ZIndex="80" Foreground="Black" FontSize="12" TextAlignment="Center" TextWrapping="Wrap"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="90" Text="新建条件"/>
+        
+        <Canvas Name="cnHotspot" Canvas.ZIndex="80">
+            <Rectangle Name="hotspotLeft" Canvas.ZIndex="80" Canvas.Top="24" Width="8" Height="8" Fill="Blue" Stroke="White"
+                       StrokeThickness="1" RadiusX="0" RadiusY="0" Opacity="1.0"/>
+            <Rectangle Name="hotspotTop" Canvas.ZIndex="80" Canvas.Left="68" Width="8" Height="8" Fill="Blue" Stroke="White"
+                       StrokeThickness="1" RadiusX="0" RadiusY="0" Opacity="1.0"/>
+            <Rectangle Name="hotspotRight" Canvas.ZIndex="80" Canvas.Left="136" Canvas.Top="24" Width="8" Height="8" Fill="Blue" Stroke="White"
+                       StrokeThickness="1" RadiusX="0" RadiusY="0" Opacity="1.0"/>
+            <Rectangle Name="hotspotBottom" Canvas.ZIndex="80" Canvas.Left="68" Canvas.Top="48" Width="8" Height="8" Fill="Blue" Stroke="White"
+                       StrokeThickness="1" RadiusX="0" RadiusY="0" Opacity="1.0"/>
+        </Canvas>
+    </Grid>
+</UserControl>

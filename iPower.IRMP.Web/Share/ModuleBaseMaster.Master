@@ -1,0 +1,45 @@
+﻿<%--
+//================================================================================
+//  FileName: ModuleBaseMaster.Master
+//  Desc:
+//
+//  Called by
+//
+//  Auth:杨勇（jeason1914@gmail.com）
+//  Date: 2011/8/10
+//================================================================================
+//  Change History
+//================================================================================
+//  Date  Author  Description
+//  ----    ------  -----------------
+//
+//================================================================================
+//  Copyright (C) 2004-2009 Jeason Young Corporation
+//================================================================================
+//--%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ModuleBaseMaster.master.cs" Inherits="iPower.IRMP.Web.Share.ModuleBaseMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+    <meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)" />
+    <meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)" />
+    <asp:ContentPlaceHolder ID="ContentHead" runat="server" />
+    <base target="_self" />
+    <style type="text/css" media="print">
+        .NoPrint
+        {
+        	display:none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlace" runat="server" />
+    </form>
+    <asp:ContentPlaceHolder ID="ContentPlaceScript" runat="server" />
+</body>
+</html>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B7B998D-7496-4A29-A662-3472F49F8F84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iPower.IRMP.Security.Engine</RootNamespace>
+    <AssemblyName>iPower.IRMP.Security.Engine</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\iPower.IRMP.Security.Engine.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\iPower.IRMP\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo_v.cs" />
+    <Compile Include="Domain\SecurityAction.cs" />
+    <Compile Include="Domain\SecurityModule.cs" />
+    <Compile Include="Domain\SecurityRegsiter.cs" />
+    <Compile Include="Domain\SecurityRight.cs" />
+    <Compile Include="Domain\SecurityRole.cs" />
+    <Compile Include="Domain\SecurityRoleDepartment.cs" />
+    <Compile Include="Domain\SecurityRoleEmployee.cs" />
+    <Compile Include="Domain\SecurityRolePost.cs" />
+    <Compile Include="Domain\SecurityRoleRank.cs" />
+    <Compile Include="Domain\SecurityRoleRight.cs" />
+    <Compile Include="Domain\SecurityRoleSystem.cs" />
+    <Compile Include="Persistence\DbModuleEntity.cs" />
+    <Compile Include="Persistence\ModuleConfiguration.cs" />
+    <Compile Include="Persistence\ModuleConstants.cs" />
+    <Compile Include="Persistence\ModuleEnums.cs" />
+    <Compile Include="Persistence\ModuleUtils.cs" />
+    <Compile Include="Persistence\SecurityActionEntity.cs" />
+    <Compile Include="Persistence\SecurityModuleEntity.cs" />
+    <Compile Include="Persistence\SecurityRegsiterEntity.cs" />
+    <Compile Include="Persistence\SecurityRightEntity.cs" />
+    <Compile Include="Persistence\SecurityRoleDepartmentEntity.cs" />
+    <Compile Include="Persistence\SecurityRoleEmployeeEntity.cs" />
+    <Compile Include="Persistence\SecurityRoleEntity.cs" />
+    <Compile Include="Persistence\SecurityRolePostEntity.cs" />
+    <Compile Include="Persistence\SecurityRoleRankEntity.cs" />
+    <Compile Include="Persistence\SecurityRoleRightEntity.cs" />
+    <Compile Include="Persistence\SecurityRoleSystemEntity.cs" />
+    <Compile Include="SecurityFactoryProvider.cs" />
+    <Compile Include="SecurityPermissionFacotry.cs" />
+    <Compile Include="Service\ModulePresenter.cs" />
+    <Compile Include="Service\SecurityActionPresenter.cs" />
+    <Compile Include="Service\SecurityModulePresenter.cs" />
+    <Compile Include="Service\SecurityRegsiterPresenter.cs" />
+    <Compile Include="Service\SecurityRightPresenter.cs" />
+    <Compile Include="Service\SecurityRoleDepartmentPresenter.cs" />
+    <Compile Include="Service\SecurityRoleEmployeePresenter.cs" />
+    <Compile Include="Service\SecurityRolePostPresenter.cs" />
+    <Compile Include="Service\SecurityRolePresenter.cs" />
+    <Compile Include="Service\SecurityRoleRankPresenter.cs" />
+    <Compile Include="Service\SecurityRoleRightPresenter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\iPower\iPower.Data\iPower.Data.csproj">
+      <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
+      <Name>iPower.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
+      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
+      <Name>iPower.Platform.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.Platform\iPower.Platform.csproj">
+      <Project>{349E7E3F-0050-4728-A5D5-8A7ADD0F9FAF}</Project>
+      <Name>iPower.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower\iPower.csproj">
+      <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
+      <Name>iPower</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP.Engine\iPower.IRMP.Engine.csproj">
+      <Project>{7EE919AF-588F-403B-81FB-E2B462341C66}</Project>
+      <Name>iPower.IRMP.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP.Org.Poxy\iPower.IRMP.Org.Poxy.csproj">
+      <Project>{6B14F10A-78F5-48E6-9A92-5B2A88D4ED10}</Project>
+      <Name>iPower.IRMP.Org.Poxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP\iPower.IRMP.csproj">
+      <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
+      <Name>iPower.IRMP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

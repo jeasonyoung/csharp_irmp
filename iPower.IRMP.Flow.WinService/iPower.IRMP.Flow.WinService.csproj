@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2BE7F32-3F2A-46BF-8051-9A3626F9A2BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iPower.IRMP.Flow.WinService</RootNamespace>
+    <AssemblyName>iPower.IRMP.Flow.WinService</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\iPower.IRMP.Flow.WinService.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\FlowInstanceRunError.cs" />
+    <Compile Include="Domain\FlowInstanceTask.cs" />
+    <Compile Include="Domain\FlowParameterInstance.cs" />
+    <Compile Include="Domain\FlowProcessInstance.cs" />
+    <Compile Include="Domain\FlowStepInstance.cs" />
+    <Compile Include="Domain\FlowStepInstanceData.cs" />
+    <Compile Include="Persistence\FlowInstanceRunErrorEntity.cs" />
+    <Compile Include="Persistence\FlowInstanceTaskEntity.cs" />
+    <Compile Include="Persistence\FlowParameterInstanceEntity.cs" />
+    <Compile Include="Persistence\FlowProcessInstanceEntity.cs" />
+    <Compile Include="Persistence\FlowStepInstanceDataEntity.cs" />
+    <Compile Include="Persistence\FlowStepInstanceEntity.cs" />
+    <Compile Include="Persistence\ModuleConfiguration.cs" />
+    <Compile Include="Persistence\DbModuleEntity.cs" />
+    <Compile Include="Poxy\OrgFactoryProviderService.cs">
+    </Compile>
+    <Compile Include="Poxy\SecurityFactoryProviderService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinFlowEngineService.cs" />
+    <Compile Include="WinFlowEngineServiceCore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\iPower\iPower.Data\iPower.Data.csproj">
+      <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
+      <Name>iPower.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.WinService\iPower.WinService.csproj">
+      <Project>{5C700A69-C208-4B0A-A78E-BA681015EDB7}</Project>
+      <Name>iPower.WinService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower\iPower.csproj">
+      <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
+      <Name>iPower</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP.Flow\iPower.IRMP.Flow.csproj">
+      <Project>{AC82B0D6-DB71-41A0-ABCE-EF95B33BD344}</Project>
+      <Name>iPower.IRMP.Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP\iPower.IRMP.csproj">
+      <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
+      <Name>iPower.IRMP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

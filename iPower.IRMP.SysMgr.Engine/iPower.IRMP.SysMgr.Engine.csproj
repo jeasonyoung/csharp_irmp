@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABB00055-104A-4157-8C7E-C281C42F0BDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iPower.IRMP.SysMgr.Engine</RootNamespace>
+    <AssemblyName>iPower.IRMP.SysMgr.Engine</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\iPower.IRMP.SysMgr.Engine.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower\bin\Debug\iPower.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.Data\bin\Debug\iPower.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.Platform\bin\Debug\iPower.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Resources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.Resources\bin\Debug\iPower.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\iPower.IRMP\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo_v.cs" />
+    <Compile Include="AuthorizedToVerifyProvider.cs" />
+    <Compile Include="Domain\CommonEnums.cs" />
+    <Compile Include="Domain\IRMPCommonLog.cs" />
+    <Compile Include="Domain\SSOTicket.cs" />
+    <Compile Include="Domain\SysMgrAppAuthorization.cs" />
+    <Compile Include="Domain\SysMgrEmployeeAuthorization.cs" />
+    <Compile Include="Domain\SysMgrLimitBindIPAddr.cs" />
+    <Compile Include="Domain\SysMgrLimitLogin.cs" />
+    <Compile Include="Domain\SysMgrLimitRefusedIPAddr.cs" />
+    <Compile Include="Domain\SysMgrLimitSpecifyTimeZone.cs" />
+    <Compile Include="Domain\SysMgrLinks.cs" />
+    <Compile Include="Domain\SysMgrRegWebPartTemplate.cs" />
+    <Compile Include="Domain\SysMgrRegWebPartTemplateProperty.cs" />
+    <Compile Include="Domain\SysMgrSetting.cs" />
+    <Compile Include="Domain\SysMgrSettingPersonal.cs" />
+    <Compile Include="Domain\SysMgrWebPart.cs" />
+    <Compile Include="Domain\SysMgrWebPartPersonal.cs" />
+    <Compile Include="Domain\SysMgrWebPartProperty.cs" />
+    <Compile Include="Domain\SysMgrWebPartZone.cs" />
+    <Compile Include="Persistence\CommonEnumsEntity.cs" />
+    <Compile Include="Persistence\DbModuleEntity.cs" />
+    <Compile Include="Persistence\IRMPCommonLogEntity.cs" />
+    <Compile Include="Persistence\ModuleConfiguration.cs" />
+    <Compile Include="Persistence\ModuleConstants.cs" />
+    <Compile Include="Persistence\ModuleEnums.cs" />
+    <Compile Include="Persistence\ModuleUtils.cs" />
+    <Compile Include="Persistence\SSOTicketEntity.cs" />
+    <Compile Include="Persistence\SysMgrAppAuthorizationEntity.cs" />
+    <Compile Include="Persistence\SysMgrEmployeeAuthorizationEntity.cs" />
+    <Compile Include="Persistence\SysMgrLimitBindIPAddrEntity.cs" />
+    <Compile Include="Persistence\SysMgrLimitLoginEntity.cs" />
+    <Compile Include="Persistence\SysMgrLimitRefusedIPAddrEntity.cs" />
+    <Compile Include="Persistence\SysMgrLimitSpecifyTimeZoneEntity.cs" />
+    <Compile Include="Persistence\SysMgrLinksEntity.cs" />
+    <Compile Include="Persistence\SysMgrRegWebPartTemplateEntity.cs" />
+    <Compile Include="Persistence\SysMgrRegWebPartTemplatePropertyEntity.cs" />
+    <Compile Include="Persistence\SysMgrSettingEntity.cs" />
+    <Compile Include="Persistence\SysMgrSettingPersonalEntity.cs" />
+    <Compile Include="Persistence\SysMgrWebPartEntity.cs" />
+    <Compile Include="Persistence\SysMgrWebPartPersonalEntity.cs" />
+    <Compile Include="Persistence\SysMgrWebPartPropertyEntity.cs" />
+    <Compile Include="Persistence\SysMgrWebPartZoneEntity.cs" />
+    <Compile Include="Service\CommonEnumsPresenter.cs" />
+    <Compile Include="Service\IRMPCommonLogPresenter.cs" />
+    <Compile Include="Service\ModulePresenter.cs" />
+    <Compile Include="Service\ResourcesPresenter.cs" />
+    <Compile Include="Service\SSOTicketPresenter.cs" />
+    <Compile Include="Service\SysMgrAppAuthorizationPresenter.cs" />
+    <Compile Include="Service\SysMgrEmployeeAuthorizationPresenter.cs" />
+    <Compile Include="Service\SysMgrLimitBindIPAddrPresenter.cs" />
+    <Compile Include="Service\SysMgrLimitLoginPresenter.cs" />
+    <Compile Include="Service\SysMgrLimitRefusedIPAddrPresenter.cs" />
+    <Compile Include="Service\SysMgrLimitSpecifyTimeZonePresenter.cs" />
+    <Compile Include="Service\SysMgrLinksPresenter.cs" />
+    <Compile Include="Service\SysMgrLoginPresenter.cs" />
+    <Compile Include="Service\SysMgrLogoutPresenter.cs" />
+    <Compile Include="Service\SysMgrRegWebPartTemplatePresenter.cs" />
+    <Compile Include="Service\SysMgrSettingPersonalPresenter.cs" />
+    <Compile Include="Service\SysMgrSettingPresenter.cs" />
+    <Compile Include="Service\SysMgrWebPartPersonalPresenter.cs" />
+    <Compile Include="Service\SysMgrWebPartPresenter.cs" />
+    <Compile Include="Service\SysMgrWebPartZonePresenter.cs" />
+    <Compile Include="WebPartFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\iPower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
+      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
+      <Name>iPower.Platform.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP.Security.Poxy\iPower.IRMP.Security.Poxy.csproj">
+      <Project>{4F442E69-8F66-4D5A-A1E2-DDD60714CEF4}</Project>
+      <Name>iPower.IRMP.Security.Poxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iPower.IRMP\iPower.IRMP.csproj">
+      <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
+      <Name>iPower.IRMP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

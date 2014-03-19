@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Jeason version="1.0">
+  <!--组织架构管理-->
+  <System SystemID="AG000000000000000000000000000000" SystemSign="yaesoft.IRMP.Org" SystemName="组织架构管理" SystemDescription="">
+    <Module ModuleID="AG000000000000000000000000000001" ModuleName="组织架构" ModuleUri="" OrderNo="1">
+      <Module ModuleID="AG000000000000000000000000000101" ModuleName="组织单元" ModuleUri="frmOrgDepartmentList.aspx" OrderNo="1"/>
+      <Module ModuleID="AG000000000000000000000000000201" ModuleName="岗位级别" ModuleUri="frmOrgRankList.aspx" OrderNo="2"/>
+      <Module ModuleID="AG000000000000000000000000000301" ModuleName="岗位体系" ModuleUri="frmOrgPostList.aspx" OrderNo="3"/>
+      <Module ModuleID="AG000000000000000000000000000401" ModuleName="用户管理" ModuleUri="frmOrgEmployeeList.aspx" OrderNo="4"/>
+      <Module ModuleID="AG000000000000000000000000000501" ModuleName="领导分管" ModuleUri="frmOrgLeaderSubChargeList.aspx" OrderNo="5"/>
+      <!--Module ModuleID="AG000000000000000000000000000601" ModuleName="系统用户" ModuleUri="" OrderNo="6"/-->
+    </Module>
+  </System>
+</Jeason>

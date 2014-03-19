@@ -1,0 +1,374 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DD3CEED-C71E-464C-A1BA-6145F7CCEBAD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iPower.IRMP.Security.Web</RootNamespace>
+    <AssemblyName>iPower.IRMP.Security.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\iPower\iPower\bin\Debug\iPower.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\iPower\iPower.Data\bin\Debug\iPower.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\iPower\iPower.Platform\bin\Debug\iPower.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\iPower\iPower.Platform.Engine\bin\Debug\iPower.Platform.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\iPower\iPower.Platform.UI\bin\Debug\iPower.Platform.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\iPower\iPower.Web\bin\Debug\iPower.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\IRMP\iPower.IRMP\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo_v.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.ashx.cs">
+      <DependentUpon>Download.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityActionEdit.aspx.cs">
+      <DependentUpon>frmSecurityActionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityActionEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityActionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityActionExport.aspx.cs">
+      <DependentUpon>frmSecurityActionExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityActionExport.aspx.designer.cs">
+      <DependentUpon>frmSecurityActionExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityActionImport.aspx.cs">
+      <DependentUpon>frmSecurityActionImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityActionImport.aspx.designer.cs">
+      <DependentUpon>frmSecurityActionImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityActionList.aspx.cs">
+      <DependentUpon>frmSecurityActionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityActionList.aspx.designer.cs">
+      <DependentUpon>frmSecurityActionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityEmployeePicker.aspx.cs">
+      <DependentUpon>frmSecurityEmployeePicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityEmployeePicker.aspx.designer.cs">
+      <DependentUpon>frmSecurityEmployeePicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityModuleEdit.aspx.cs">
+      <DependentUpon>frmSecurityModuleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityModuleEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityModuleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityModuleImport.aspx.cs">
+      <DependentUpon>frmSecurityModuleImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityModuleImport.aspx.designer.cs">
+      <DependentUpon>frmSecurityModuleImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityModuleList.aspx.cs">
+      <DependentUpon>frmSecurityModuleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityModuleList.aspx.designer.cs">
+      <DependentUpon>frmSecurityModuleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRegsiterEdit.aspx.cs">
+      <DependentUpon>frmSecurityRegsiterEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRegsiterEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityRegsiterEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRegsiterImport.aspx.cs">
+      <DependentUpon>frmSecurityRegsiterImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRegsiterImport.aspx.designer.cs">
+      <DependentUpon>frmSecurityRegsiterImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRegsiterList.aspx.cs">
+      <DependentUpon>frmSecurityRegsiterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRegsiterList.aspx.designer.cs">
+      <DependentUpon>frmSecurityRegsiterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRightEdit.aspx.cs">
+      <DependentUpon>frmSecurityRightEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRightEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityRightEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRightList.aspx.cs">
+      <DependentUpon>frmSecurityRightList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRightList.aspx.designer.cs">
+      <DependentUpon>frmSecurityRightList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleDepartmentEdit.aspx.cs">
+      <DependentUpon>frmSecurityRoleDepartmentEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleDepartmentEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleDepartmentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleDepartmentList.aspx.cs">
+      <DependentUpon>frmSecurityRoleDepartmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleDepartmentList.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleDepartmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleEdit.aspx.cs">
+      <DependentUpon>frmSecurityRoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleEmployeeEdit.aspx.cs">
+      <DependentUpon>frmSecurityRoleEmployeeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleEmployeeEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleEmployeeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleEmployeeList.aspx.cs">
+      <DependentUpon>frmSecurityRoleEmployeeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleEmployeeList.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleEmployeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleList.aspx.cs">
+      <DependentUpon>frmSecurityRoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleList.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRolePicker.aspx.cs">
+      <DependentUpon>frmSecurityRolePicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRolePicker.aspx.designer.cs">
+      <DependentUpon>frmSecurityRolePicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRolePostEdit.aspx.cs">
+      <DependentUpon>frmSecurityRolePostEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRolePostEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityRolePostEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRolePostList.aspx.cs">
+      <DependentUpon>frmSecurityRolePostList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRolePostList.aspx.designer.cs">
+      <DependentUpon>frmSecurityRolePostList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleRankEdit.aspx.cs">
+      <DependentUpon>frmSecurityRoleRankEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleRankEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleRankEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleRankList.aspx.cs">
+      <DependentUpon>frmSecurityRoleRankList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleRankList.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleRankList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleRightEdit.aspx.cs">
+      <DependentUpon>frmSecurityRoleRightEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleRightEdit.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleRightEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityRoleRightList.aspx.cs">
+      <DependentUpon>frmSecurityRoleRightList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRoleRightList.aspx.designer.cs">
+      <DependentUpon>frmSecurityRoleRightList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurityFactoryProviderService.asmx.cs">
+      <DependentUpon>SecurityFactoryProviderService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SecurityPermissionFactoryService.asmx.cs">
+      <DependentUpon>SecurityPermissionFactoryService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleFrameSetMasterPage.Master.cs">
+      <DependentUpon>ModuleFrameSetMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleFrameSetMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleFrameSetMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Share\ModuleNormalMasterPage.Master.cs">
+      <DependentUpon>ModuleNormalMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\ModuleNormalMasterPage.Master.designer.cs">
+      <DependentUpon>ModuleNormalMasterPage.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Share\ModuleFrameSetMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="frmSecurityActionEdit.aspx" />
+    <Content Include="frmSecurityActionExport.aspx" />
+    <Content Include="frmSecurityActionImport.aspx" />
+    <Content Include="frmSecurityActionList.aspx" />
+    <Content Include="frmSecurityModuleEdit.aspx" />
+    <Content Include="frmSecurityModuleImport.aspx" />
+    <Content Include="frmSecurityModuleList.aspx" />
+    <Content Include="frmSecurityRegsiterEdit.aspx" />
+    <Content Include="frmSecurityRegsiterImport.aspx" />
+    <Content Include="frmSecurityRegsiterList.aspx" />
+    <Content Include="Share\ModuleNormalMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IRMP\iPower.IRMP.Security.Engine\iPower.IRMP.Security.Engine.csproj">
+      <Project>{7B7B998D-7496-4A29-A662-3472F49F8F84}</Project>
+      <Name>iPower.IRMP.Security.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IRMP\iPower.IRMP\iPower.IRMP.csproj">
+      <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
+      <Name>iPower.IRMP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\IRMP_SecurityModuleConfig.xml" />
+    <Content Include="Download.ashx" />
+    <Content Include="frmSecurityEmployeePicker.aspx" />
+    <Content Include="frmSecurityRightEdit.aspx" />
+    <Content Include="frmSecurityRightList.aspx" />
+    <Content Include="frmSecurityRoleDepartmentEdit.aspx" />
+    <Content Include="frmSecurityRoleDepartmentList.aspx" />
+    <Content Include="frmSecurityRoleEdit.aspx" />
+    <Content Include="frmSecurityRoleEmployeeEdit.aspx" />
+    <Content Include="frmSecurityRoleEmployeeList.aspx" />
+    <Content Include="frmSecurityRoleList.aspx" />
+    <Content Include="frmSecurityRolePicker.aspx" />
+    <Content Include="frmSecurityRolePostEdit.aspx" />
+    <Content Include="frmSecurityRolePostList.aspx" />
+    <Content Include="frmSecurityRoleRankEdit.aspx" />
+    <Content Include="frmSecurityRoleRankList.aspx" />
+    <Content Include="frmSecurityRoleRightEdit.aspx" />
+    <Content Include="frmSecurityRoleRightList.aspx" />
+    <Content Include="SecurityFactoryProviderService.asmx" />
+    <Content Include="SecurityPermissionFactoryService.asmx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11398</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

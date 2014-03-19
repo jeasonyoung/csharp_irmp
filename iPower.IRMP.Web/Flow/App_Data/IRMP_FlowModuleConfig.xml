@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Jeason version="1.0">
+  <System SystemID="AF000000000000000000000000000000" SystemSign="iPower.IRMP.Flow" SystemName="流程管理" SystemDescription="流程引擎管理">
+    <Module ModuleID="AF000000000000000000000000000001" ModuleName="流程定义" ModuleUri="" OrderNo="0">
+      <Module ModuleID="AF000000000000000000000000000101" ModuleName="流程管理" ModuleUri="frmFlowProcessList.aspx" OrderNo="1"/>
+      <Module ModuleID="AF000000000000000000000000000201" ModuleName="步骤定义" ModuleUri="frmFlowStepList.aspx" OrderNo="2"/>
+      <Module ModuleID="AF000000000000000000000000000301" ModuleName="参数定义" ModuleUri="frmFlowParameterList.aspx" OrderNo="3"/>
+      <Module ModuleID="AF000000000000000000000000000401" ModuleName="变迁规则" ModuleUri="frmFlowTransitionList.aspx" OrderNo="4"/>
+      <Module ModuleID="AF000000000000000000000000000501" ModuleName="参数映射" ModuleUri="frmFlowParameterMapList.aspx" OrderNo="5"/>
+      <Module ModuleID="AF000000000000000000000000000601" ModuleName="授权管理" ModuleUri="frmFlowStepAuthorizeList.aspx" OrderNo="6"/>
+    </Module>
+    
+    <Module ModuleID="AF000000000000000000000000000002" ModuleName="流程综合处理" ModuleUri="" OrderNo="1">
+      <Module ModuleID="AF000000000000000000000000000102" ModuleName="流程实例管理" ModuleUri="frmFlowProcessInstanceList.aspx" OrderNo="0"/>
+    </Module>
+  </System>
+</Jeason>
