@@ -54,11 +54,7 @@
     </Reference>
     <Reference Include="iPower.Platform.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\iPower\iPower.Platform.UI\bin\Debug\iPower.Platform.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="iPower.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\iPower\iPower.Web\bin\Debug\iPower.Web.dll</HintPath>
+      <HintPath>..\..\..\csharp_ipower\iPower.Platform.UI\bin\Debug\iPower.Platform.UI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -72,7 +68,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\IRMP\iPower.IRMP\Properties\AssemblyInfo.cs">
+    <Compile Include="..\..\iPower.IRMP\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo_v.cs" />
@@ -312,11 +308,15 @@
     <Content Include="Share\ModuleNormalMasterPage.Master" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\IRMP\iPower.IRMP.Security.Engine\iPower.IRMP.Security.Engine.csproj">
+    <ProjectReference Include="..\..\..\csharp_ipower\iPower.Web\iPower.Web.csproj">
+      <Project>{6E1C506F-A613-459C-BAA2-F8A412680C1E}</Project>
+      <Name>iPower.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower.IRMP.Security.Engine\iPower.IRMP.Security.Engine.csproj">
       <Project>{7B7B998D-7496-4A29-A662-3472F49F8F84}</Project>
       <Name>iPower.IRMP.Security.Engine</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\IRMP\iPower.IRMP\iPower.IRMP.csproj">
+    <ProjectReference Include="..\..\iPower.IRMP\iPower.IRMP.csproj">
       <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
       <Name>iPower.IRMP</Name>
     </ProjectReference>

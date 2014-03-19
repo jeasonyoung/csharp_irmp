@@ -69,7 +69,7 @@
     <None Include="iPower%28R%29IRMP.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\iPower\iPower\iPower.csproj">
+    <ProjectReference Include="..\..\csharp_ipower\iPower\iPower.csproj">
       <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
       <Name>iPower</Name>
     </ProjectReference>

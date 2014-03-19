@@ -36,10 +36,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Modules\iPower.dll</HintPath>
-    </Reference>
     <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Modules\iPower.Data.dll</HintPath>
@@ -202,6 +198,10 @@
     <Content Include="WebPart\TaskView.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\csharp_ipower\iPower\iPower.csproj">
+      <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
+      <Name>iPower</Name>
+    </ProjectReference>
     <ProjectReference Include="..\iPower.IRMP.Engine\iPower.IRMP.Engine.csproj">
       <Project>{7EE919AF-588F-403B-81FB-E2B462341C66}</Project>
       <Name>iPower.IRMP.Engine</Name>
@@ -229,10 +229,6 @@
     <ProjectReference Include="Flow\iPower.IRMP.Flow.Web.csproj">
       <Project>{94651D09-67C9-4047-A2C8-6D7B94447B95}</Project>
       <Name>iPower.IRMP.Flow.Web</Name>
-    </ProjectReference>
-    <ProjectReference Include="Official\Yaesoft.IRMP.Official.Web.csproj">
-      <Project>{8C683732-2081-4C7E-8A6B-077D5E1C4122}</Project>
-      <Name>Yaesoft.IRMP.Official.Web</Name>
     </ProjectReference>
     <ProjectReference Include="Org\iPower.IRMP.Org.Web.csproj">
       <Project>{F2A372FB-371F-4B33-9E18-CF2E37AFD261}</Project>

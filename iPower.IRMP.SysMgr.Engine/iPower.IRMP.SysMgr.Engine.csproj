@@ -38,19 +38,19 @@
   <ItemGroup>
     <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower\bin\Debug\iPower.dll</HintPath>
+      <HintPath>..\..\csharp_ipower\iPower\bin\Debug\iPower.dll</HintPath>
     </Reference>
     <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.Data\bin\Debug\iPower.Data.dll</HintPath>
+      <HintPath>..\..\csharp_ipower\iPower.Data\bin\Debug\iPower.Data.dll</HintPath>
     </Reference>
     <Reference Include="iPower.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.Platform\bin\Debug\iPower.Platform.dll</HintPath>
+      <HintPath>..\..\csharp_ipower\iPower.Platform\bin\Debug\iPower.Platform.dll</HintPath>
     </Reference>
     <Reference Include="iPower.Resources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.Resources\bin\Debug\iPower.Resources.dll</HintPath>
+      <HintPath>..\..\csharp_ipower\iPower.Resources\bin\Debug\iPower.Resources.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -127,10 +127,6 @@
     <Compile Include="WebPartFactory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\iPower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
-      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
-      <Name>iPower.Platform.Engine</Name>
-    </ProjectReference>
     <ProjectReference Include="..\iPower.IRMP.Security.Poxy\iPower.IRMP.Security.Poxy.csproj">
       <Project>{4F442E69-8F66-4D5A-A1E2-DDD60714CEF4}</Project>
       <Name>iPower.IRMP.Security.Poxy</Name>

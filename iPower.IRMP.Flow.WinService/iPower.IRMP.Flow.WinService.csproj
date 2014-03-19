@@ -68,15 +68,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\iPower\iPower.Data\iPower.Data.csproj">
+    <ProjectReference Include="..\..\csharp_ipower\iPower.Data\iPower.Data.csproj">
       <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
       <Name>iPower.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower.WinService\iPower.WinService.csproj">
+    <ProjectReference Include="..\..\csharp_ipower\iPower.WinService\iPower.WinService.csproj">
       <Project>{5C700A69-C208-4B0A-A78E-BA681015EDB7}</Project>
       <Name>iPower.WinService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower\iPower.csproj">
+    <ProjectReference Include="..\..\csharp_ipower\iPower\iPower.csproj">
       <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
       <Name>iPower</Name>
     </ProjectReference>
