@@ -34,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\iPower.IRMP.SysMgr.Engine.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
@@ -127,9 +128,9 @@
     <Compile Include="WebPartFactory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\iPower.IRMP.Security.Poxy\iPower.IRMP.Security.Poxy.csproj">
-      <Project>{4F442E69-8F66-4D5A-A1E2-DDD60714CEF4}</Project>
-      <Name>iPower.IRMP.Security.Poxy</Name>
+    <ProjectReference Include="..\..\csharp_ipower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
+      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
+      <Name>iPower.Platform.Engine</Name>
     </ProjectReference>
     <ProjectReference Include="..\iPower.IRMP\iPower.IRMP.csproj">
       <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>

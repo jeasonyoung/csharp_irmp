@@ -25,16 +25,17 @@ using System.ComponentModel;
 using iPower;
 using iPower.Logs;
 using iPower.IRMP.SSO;
+using iPower.Handlers;
 namespace iPower.IRMP.SSOService
 {
     /// <summary>
     /// 单点登录服务。
     /// </summary>
-    [WebService(Namespace = "http://ipower.org/", 
-                Name="单点登录服务。",
-                Description="单点登录服务。")]
+    [WebService(Namespace = "http://ipower.org/",
+                Name = "单点登录服务。",
+                Description = "单点登录服务。")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
-    public sealed class Service : WebService
+    public sealed class Service : WebServiceHandler
     {
         #region 成员变量，构造函数。
         LogContainer log;
@@ -77,13 +78,13 @@ namespace iPower.IRMP.SSOService
                     string appSystemID = service.Credentials.AppSystemID;
                     string appSystemPwd = service.Credentials.AppSystemPwd;
                     if (string.IsNullOrEmpty(appSystemID) || string.IsNullOrEmpty(appSystemPwd))
-                         throw new ArgumentException("访问该函数需要使用应用系统ID和密码。");
+                        throw new ArgumentException("访问该函数需要使用应用系统ID和密码。");
                     string err = null;
                     bool result = this.factory.AppAuthorizationVerification(appSystemID, appSystemPwd, out err);
                     if (!result)
                         throw new Exception(err);
                     return result;
-                 }
+                }
                 return false;
             }
             catch (Exception e)
@@ -208,7 +209,7 @@ namespace iPower.IRMP.SSOService
                 return new SSOCallResult(-1, e.Message);
             }
         }
-         /// <summary>
+        /// <summary>
         /// 修改用户密码。
         /// </summary>
         /// <param name="userSign">用户账号。</param>

@@ -34,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\iPower.IRMP.Security.Engine.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -92,17 +93,17 @@
       <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
       <Name>iPower.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\csharp_ipower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
+      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
+      <Name>iPower.Platform.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\csharp_ipower\iPower.Platform\iPower.Platform.csproj">
+      <Project>{349E7E3F-0050-4728-A5D5-8A7ADD0F9FAF}</Project>
+      <Name>iPower.Platform</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\csharp_ipower\iPower\iPower.csproj">
       <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
       <Name>iPower</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\iPower.IRMP.Engine\iPower.IRMP.Engine.csproj">
-      <Project>{7EE919AF-588F-403B-81FB-E2B462341C66}</Project>
-      <Name>iPower.IRMP.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\iPower.IRMP.Org.Poxy\iPower.IRMP.Org.Poxy.csproj">
-      <Project>{6B14F10A-78F5-48E6-9A92-5B2A88D4ED10}</Project>
-      <Name>iPower.IRMP.Org.Poxy</Name>
     </ProjectReference>
     <ProjectReference Include="..\iPower.IRMP\iPower.IRMP.csproj">
       <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>

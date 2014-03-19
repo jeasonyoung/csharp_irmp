@@ -37,6 +37,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\iPower.IRMP.Engine.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -71,6 +72,14 @@
     <ProjectReference Include="..\..\csharp_ipower\iPower.Data\iPower.Data.csproj">
       <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
       <Name>iPower.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\csharp_ipower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
+      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
+      <Name>iPower.Platform.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\csharp_ipower\iPower.Platform\iPower.Platform.csproj">
+      <Project>{349E7E3F-0050-4728-A5D5-8A7ADD0F9FAF}</Project>
+      <Name>iPower.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\csharp_ipower\iPower\iPower.csproj">
       <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
