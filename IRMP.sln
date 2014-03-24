@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iPower(R)IRMP", "iPower(R)IRMP", "{6A84CD55-EC72-44BF-A8DF-5D6AA366C674}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iPower(R)IRMP Org", "iPower(R)IRMP Org", "{DE2DF6A7-51AA-4499-8596-4452BD5C76C7}"
@@ -10,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iPower(R)IRMP Flow", "iPower(R)IRMP Flow", "{EAA7C8F2-D1DD-4D6E-8F99-A6C5A8730A33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iPower(R)IRMP SysMgr", "iPower(R)IRMP SysMgr", "{AF573D20-9066-45AD-9640-75182839B532}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "基础框架", "基础框架", "{C9F4F970-1E16-498F-9338-6BED5708AC47}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPower.IRMP", "iPower.IRMP\iPower.IRMP.csproj", "{3AC24990-D86C-4989-84DC-4EDF9592520C}"
 EndProject
@@ -57,8 +61,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPower.IRMP.Security.Poxy",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPower.IRMP.Flow.WinService", "iPower.IRMP.Flow.WinService\iPower.IRMP.Flow.WinService.csproj", "{A2BE7F32-3F2A-46BF-8051-9A3626F9A2BE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "基础框架", "基础框架", "{C9F4F970-1E16-498F-9338-6BED5708AC47}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPower", "..\csharp_ipower\iPower\iPower.csproj", "{ACF5A361-DFCF-4346-921C-060DB79E7F19}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPower.Data", "..\csharp_ipower\iPower.Data\iPower.Data.csproj", "{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}"
@@ -78,10 +80,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPower.IRMP.SSOService", "iPower.IRMP.SSOService\iPower.IRMP.SSOService.csproj", "{EBA902BB-BDAA-4938-8922-4CEEE1081193}"
 EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
